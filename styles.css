@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background: url('background.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Orbitron;
+  font-size: 48px;
+  font-weight: 900;
+  text-shadow: 0 2px 3px black;
+  color: lightskyblue;
+}
+
+.btn {
+  width: 80px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.streams {
+  width: 100%;
+}
+
+.streams a {
+  text-decoration: none;
+}
+
+.deleted {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+}
+
+.stream {
+  margin-bottom: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.stream:hover {
+  border: 5px solid orange;
+}
+
+.channelLogo img {
+  width: 100%
+}
+
+.channelName {
+  font-size: 24px;
+  color: lightskyblue;
+  text-shadow: 0 2px 3px black;
+}
+
+.currentStream {
+  font-size: 18px;
+  text-shadow: 0 2px 3px black;
+}
+
+.online, .online:hover, .online:visited {
+  color: lightgreen;
+}
+
+.offline, .deleted, .offline:hover, .deleted:hover, .offline:visited, .deleted:visited {
+  color: indianred;
+}
+
+footer,
+footer a,
+footer a:hover,
+footer a:visited {
+  margin-top: 10px;
+  color: white;
+  text-shadow: 0 2px 3px black;
+}
